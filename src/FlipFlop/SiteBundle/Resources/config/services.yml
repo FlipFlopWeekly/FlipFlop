@@ -1,0 +1,7 @@
+parameters:
+#    flipflop_site.example.class: FlipFlop\SiteBundle\Example
+
+services:
+#    flipflop_site.example:
+#        class: %flipflop_site.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

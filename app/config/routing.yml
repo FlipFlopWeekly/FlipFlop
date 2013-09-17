@@ -1,0 +1,7 @@
+flipflop_site:
+    resource: "@FlipFlopSiteBundle/Resources/config/routing.yml"
+    prefix:   /
+
+# app/config/routing.yml
+_bazinga_exposetranslation:
+    resource: "@BazingaExposeTranslationBundle/Resources/config/routing/routing.yml"
