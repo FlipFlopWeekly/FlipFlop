@@ -28,11 +28,15 @@ class Newsletter
      */
     private $date;
 
+    /**
+     * @ORM\OneToMany(targetEntity="FlipFlop\SiteBundle\Entity\Video", mappedBy="user")
+     */
+    protected $videos;
 
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -48,14 +52,14 @@ class Newsletter
     public function setDate($date)
     {
         $this->date = $date;
-    
+
         return $this;
     }
 
     /**
      * Get date
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getDate()
     {

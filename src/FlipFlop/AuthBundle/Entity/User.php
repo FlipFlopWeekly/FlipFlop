@@ -28,6 +28,11 @@ class User extends BaseUser
     protected $id;
 
     /**
+     * @ORM\OneToMany(targetEntity="FlipFlop\SiteBundle\Entity\Video", mappedBy="user")
+     */
+    protected $videos;
+
+    /**
      * Constructor.
      */
     public function __construct()

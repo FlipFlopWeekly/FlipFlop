@@ -24,14 +24,14 @@ class Video
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255)
+     * @ORM\Column(name="name", type="string", length=255, nullable=false)
      */
     private $name;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="url", type="string", length=255)
+     * @ORM\Column(name="url", type="string", length=255, nullable=false)
      */
     private $url;
 
@@ -42,11 +42,29 @@ class Video
      */
     private $statut;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="FlipFlop\SiteBundle\Entity\Newsletter")
+     * @ORM\JoinColumn(name="id_newsletter", referencedColumnName="id")
+     */
+    protected $newsletter;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="FlipFlop\SiteBundle\Entity\Category", cascade={"remove"})
+     * @ORM\JoinColumn(name="id_category", referencedColumnName="id", nullable=false)
+     */
+    protected $category;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="FlipFlop\AuthBundle\Entity\User")
+     * @ORM\JoinColumn(name="id_user", referencedColumnName="id", nullable=false)
+     */
+    protected $user;
+
 
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -62,14 +80,14 @@ class Video
     public function setName($name)
     {
         $this->name = $name;
-    
+
         return $this;
     }
 
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -85,14 +103,14 @@ class Video
     public function setUrl($url)
     {
         $this->url = $url;
-    
+
         return $this;
     }
 
     /**
      * Get url
      *
-     * @return string 
+     * @return string
      */
     public function getUrl()
     {
@@ -108,14 +126,14 @@ class Video
     public function setStatut($statut)
     {
         $this->statut = $statut;
-    
+
         return $this;
     }
 
     /**
      * Get statut
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getStatut()
     {
