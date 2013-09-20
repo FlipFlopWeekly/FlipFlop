@@ -17,12 +17,17 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
-            // FlipFlop Bundles
-            new FlipFlop\SiteBundle\FlipFlopSiteBundle(),
+        new FlipFlop\AuthBundle\FlipFlopAuthBundle(),
+            // FOS
+            new FOS\UserBundle\FOSUserBundle(),
 
             // Tools bundle
             new Bazinga\ExposeTranslationBundle\BazingaExposeTranslationBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+
+            // FlipFlop Bundles
+            new FlipFlop\SiteBundle\FlipFlopSiteBundle(),
+
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

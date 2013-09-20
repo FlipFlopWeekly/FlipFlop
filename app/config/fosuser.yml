@@ -1,0 +1,19 @@
+parameters:
+    fos_user.user_class: FlipFlop\AuthBundle\Entity\User
+    fos_user.group.group_class: FlipFlop\AuthBundle\Entity\UserGroup
+
+
+#
+# FOSUserBundle with SonataUserBundle
+# see: http://sonata-project.org/bundles/user/master/doc/index.html
+# see: https://github.com/FriendsOfSymfony/FOSUserBundle/tree/master/Resources/doc
+#
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: %fos_user.user_class%
+    group:
+        group_class: %fos_user.group.group_class%
+    registration:
+        confirmation:
+            enabled: true
