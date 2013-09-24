@@ -27,7 +27,6 @@ class AppKernel extends Kernel
 
             // FlipFlop Bundles
             new FlipFlop\SiteBundle\FlipFlopSiteBundle(),
-,
             new FlipFlop\NewsletterBundle\FlipFlopNewsletterBundle(),
         );
 
