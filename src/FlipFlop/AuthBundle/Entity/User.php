@@ -32,6 +32,37 @@ class User extends BaseUser
      */
     protected $videos;
 
+    // ********************** Begin : Social network attributes. ********************** //
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="facebook_account", type="string", length=255, nullable=true)
+     */
+    protected $facebook_account;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="twitter_id", type="string", length=255, nullable=true)
+     */
+    protected $twitter_account;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="gmail_email", type="string", length=255, nullable=true)
+     */
+    protected $gmail_account;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="youtube_channel", type="string", length=255, nullable=true)
+     */
+    protected $youtube_account;
+    // ********************** End : Social network attributes. ********************** //
+
+
     /**
      * Constructor.
      */

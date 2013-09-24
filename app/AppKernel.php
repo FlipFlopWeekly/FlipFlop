@@ -27,7 +27,7 @@ class AppKernel extends Kernel
 
             // FlipFlop Bundles
             new FlipFlop\SiteBundle\FlipFlopSiteBundle(),
-
+            new FlipFlop\NewsletterBundle\FlipFlopNewsletterBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
