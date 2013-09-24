@@ -1,3 +1,7 @@
+flip_flop_newsletter:
+    resource: "@FlipFlopNewsletterBundle/Resources/config/routing.yml"
+    prefix:   /
+
 flip_flop_auth:
     resource: "@FlipFlopAuthBundle/Resources/config/routing.yml"
     prefix:   /

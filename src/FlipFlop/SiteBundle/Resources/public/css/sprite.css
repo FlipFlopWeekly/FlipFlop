@@ -1,0 +1,26 @@
+i[class^="icon-"]
+{
+    background-image: url('../images/sprite.png');
+    display: inline-block;
+}
+
+.icon-food
+{
+    background-position: 0 0;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-movie
+{
+    background-position: -90px 0;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-newsletter
+{
+    background-position: -180px 0;
+    width: 40px;
+    height: 40px;
+}
