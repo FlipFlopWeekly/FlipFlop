@@ -1,3 +1,19 @@
-flipflop_site_homepage:
+flipflop_entity_crud_video:
+    resource: "@FlipFlopSiteBundle/Resources/config/routing/video.yml"
+    prefix:   /admin/crud/video/
+
+flipflop_entity_crud_newsletter:
+    resource: "@FlipFlopSiteBundle/Resources/config/routing/newsletter.yml"
+    prefix:   /admin/crud/newsletter/
+
+flipflop_entity_crud_category:
+    resource: "@FlipFlopSiteBundle/Resources/config/routing/category.yml"
+    prefix:   /admin/crud/category/
+
+flipflop_site_welcome:
     pattern:  /welcome/{name}
+    defaults: { _controller: FlipFlopSiteBundle:Default:welcome }
+
+flipflop_site_homepage:
+    pattern:  /
     defaults: { _controller: FlipFlopSiteBundle:Default:index }

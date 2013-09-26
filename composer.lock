@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "eb1b919d0308ea77c756be9452e3ebf2",
+    "hash": "057777ffacf6b07e2373ed39e3bd139d",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -661,17 +661,17 @@
         },
         {
             "name": "friendsofsymfony/user-bundle",
-            "version": "v1.3.2",
+            "version": "v1.3.3",
             "target-dir": "FOS/UserBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "90cb9c1785f7a7c406dddc5295b41e85b6c65905"
+                "reference": "0fc044447ca41acc73d424a6a90d1b9f7fa25d7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/90cb9c1785f7a7c406dddc5295b41e85b6c65905",
-                "reference": "90cb9c1785f7a7c406dddc5295b41e85b6c65905",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/0fc044447ca41acc73d424a6a90d1b9f7fa25d7b",
+                "reference": "0fc044447ca41acc73d424a6a90d1b9f7fa25d7b",
                 "shasum": ""
             },
             "require": {
@@ -725,7 +725,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2013-05-25 12:08:24"
+            "time": "2013-09-23 08:24:12"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -908,6 +908,59 @@
             "time": "2013-04-26 18:42:52"
         },
         {
+            "name": "jordillonch/crud-generator",
+            "version": "dev-master",
+            "target-dir": "JordiLlonch/Bundle/CrudGeneratorBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jordillonch/CrudGeneratorBundle.git",
+                "reference": "ea17adbb871313a65e750ca42db413bc161c6759"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jordillonch/CrudGeneratorBundle/zipball/ea17adbb871313a65e750ca42db413bc161c6759",
+                "reference": "ea17adbb871313a65e750ca42db413bc161c6759",
+                "shasum": ""
+            },
+            "require": {
+                "lexik/form-filter-bundle": "1.2.*",
+                "pagerfanta/pagerfanta": "1.0.*@dev",
+                "sensio/generator-bundle": ">2.2.0, <2.4-dev",
+                "symfony/symfony": ">2.2.0, <2.4-dev"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "JordiLlonch\\Bundle\\CrudGeneratorBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Llonch",
+                    "email": "llonch.jordi@gmail.com"
+                }
+            ],
+            "description": "This bundle generates a nice CRUD",
+            "homepage": "https://github.com/jordillonch/CrudGeneratorBundle",
+            "keywords": [
+                "crud",
+                "generator"
+            ],
+            "time": "2013-09-15 13:26:02"
+        },
+        {
             "name": "kriswallsmith/assetic",
             "version": "v1.1.2",
             "source": {
@@ -979,6 +1032,58 @@
             "time": "2013-07-19 00:03:27"
         },
         {
+            "name": "lexik/form-filter-bundle",
+            "version": "v1.2.3",
+            "target-dir": "Lexik/Bundle/FormFilterBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lexik/LexikFormFilterBundle.git",
+                "reference": "425408b76fc349bbcbe3ac598052e6a780e98b15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lexik/LexikFormFilterBundle/zipball/425408b76fc349bbcbe3ac598052e6a780e98b15",
+                "reference": "425408b76fc349bbcbe3ac598052e6a780e98b15",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": "*",
+                "php": ">=5.3.2",
+                "symfony/form": ">=2.1,<2.4-dev",
+                "symfony/framework-bundle": ">=2.1,<2.4-dev"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Lexik\\Bundle\\FormFilterBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dev Lexik",
+                    "email": "dev@lexik.fr"
+                },
+                {
+                    "name": "Cedric Girard",
+                    "email": "c.girard@lexik.fr"
+                }
+            ],
+            "description": "This bundle aim to provide classes to build some form filters and then build a doctrine query from this form filter.",
+            "homepage": "https://github.com/lexik/LexikFormFilterBundle",
+            "keywords": [
+                "Symfony2",
+                "bundle",
+                "doctrine",
+                "filter",
+                "form"
+            ],
+            "time": "2013-06-04 08:35:57"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.6.0",
             "source": {
@@ -1039,6 +1144,68 @@
                 "psr-3"
             ],
             "time": "2013-07-28 22:38:30"
+        },
+        {
+            "name": "pagerfanta/pagerfanta",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/whiteoctober/Pagerfanta.git",
+                "reference": "4d5f15a3700a769bd0af364ccd7ecadb07d91d78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/whiteoctober/Pagerfanta/zipball/4d5f15a3700a769bd0af364ccd7ecadb07d91d78",
+                "reference": "4d5f15a3700a769bd0af364ccd7ecadb07d91d78",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "doctrine/mongodb-odm": "*",
+                "doctrine/orm": "2.*",
+                "mandango/mandango": "*",
+                "propel/propel1": "~1.6",
+                "solarium/solarium": "dev-develop"
+            },
+            "suggest": {
+                "doctrine/mongodb-odm": "To use the DoctrineODMMongoDBAdapter.",
+                "doctrine/orm": "To use the DoctrineORMAdapter.",
+                "mandango/mandango": "To use the MandangoAdapter.",
+                "propel/propel1": "To use the PropelAdapter",
+                "solarium/solarium": "To use the SolariumAdapter."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pagerfanta\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pablo Díez",
+                    "email": "pablodip@gmail.com",
+                    "homepage": "http://github.com/pablodip"
+                }
+            ],
+            "description": "Pagination for PHP 5.3",
+            "keywords": [
+                "page",
+                "pagination",
+                "paginator",
+                "paging"
+            ],
+            "time": "2013-04-24 11:35:36"
         },
         {
             "name": "psr/log",
@@ -1821,7 +1988,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "elao/web-profiler-extra-bundle": 20,
-        "stof/doctrine-extensions-bundle": 20
+        "stof/doctrine-extensions-bundle": 20,
+        "jordillonch/crud-generator": 20
     },
     "platform": {
         "php": ">=5.3.3"

@@ -139,4 +139,73 @@ class Video
     {
         return $this->statut;
     }
+
+    /**
+     * Set newsletter
+     *
+     * @param \FlipFlop\SiteBundle\Entity\Newsletter $newsletter
+     * @return Video
+     */
+    public function setNewsletter(\FlipFlop\SiteBundle\Entity\Newsletter $newsletter = null)
+    {
+        $this->newsletter = $newsletter;
+    
+        return $this;
+    }
+
+    /**
+     * Get newsletter
+     *
+     * @return \FlipFlop\SiteBundle\Entity\Newsletter 
+     */
+    public function getNewsletter()
+    {
+        return $this->newsletter;
+    }
+
+    /**
+     * Set category
+     *
+     * @param \FlipFlop\SiteBundle\Entity\Category $category
+     * @return Video
+     */
+    public function setCategory(\FlipFlop\SiteBundle\Entity\Category $category)
+    {
+        $this->category = $category;
+    
+        return $this;
+    }
+
+    /**
+     * Get category
+     *
+     * @return \FlipFlop\SiteBundle\Entity\Category 
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \FlipFlop\AuthBundle\Entity\User $user
+     * @return Video
+     */
+    public function setUser(\FlipFlop\AuthBundle\Entity\User $user)
+    {
+        $this->user = $user;
+    
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \FlipFlop\AuthBundle\Entity\User 
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
 }

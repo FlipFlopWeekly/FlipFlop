@@ -17,7 +17,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
-        new FlipFlop\AuthBundle\FlipFlopAuthBundle(),
+            new FlipFlop\AuthBundle\FlipFlopAuthBundle(),
             // FOS
             new FOS\UserBundle\FOSUserBundle(),
 
@@ -28,10 +28,13 @@ class AppKernel extends Kernel
             // FlipFlop Bundles
             new FlipFlop\SiteBundle\FlipFlopSiteBundle(),
             new FlipFlop\NewsletterBundle\FlipFlopNewsletterBundle(),
+
+            // CRUD bundles
+            new Lexik\Bundle\FormFilterBundle\LexikFormFilterBundle(),
+            new JordiLlonch\Bundle\CrudGeneratorBundle\JordiLlonchCrudGeneratorBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
-            $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();

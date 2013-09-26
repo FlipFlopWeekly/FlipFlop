@@ -65,4 +65,44 @@ class Newsletter
     {
         return $this->date;
     }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->videos = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
+    /**
+     * Add videos
+     *
+     * @param \FlipFlop\SiteBundle\Entity\Video $videos
+     * @return Newsletter
+     */
+    public function addVideo(\FlipFlop\SiteBundle\Entity\Video $videos)
+    {
+        $this->videos[] = $videos;
+    
+        return $this;
+    }
+
+    /**
+     * Remove videos
+     *
+     * @param \FlipFlop\SiteBundle\Entity\Video $videos
+     */
+    public function removeVideo(\FlipFlop\SiteBundle\Entity\Video $videos)
+    {
+        $this->videos->removeElement($videos);
+    }
+
+    /**
+     * Get videos
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getVideos()
+    {
+        return $this->videos;
+    }
 }
