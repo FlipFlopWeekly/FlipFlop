@@ -1,0 +1,30 @@
+admin_crud_video:
+    pattern:  /
+    defaults: { _controller: "FlipFlopSiteBundle:Video:index" }
+
+admin_crud_video_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "FlipFlopSiteBundle:Video:show" }
+
+admin_crud_video_new:
+    pattern:  /new
+    defaults: { _controller: "FlipFlopSiteBundle:Video:new" }
+
+admin_crud_video_create:
+    pattern:  /create
+    defaults: { _controller: "FlipFlopSiteBundle:Video:create" }
+    requirements: { _method: post }
+
+admin_crud_video_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "FlipFlopSiteBundle:Video:edit" }
+
+admin_crud_video_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "FlipFlopSiteBundle:Video:update" }
+    requirements: { _method: post|put }
+
+admin_crud_video_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "FlipFlopSiteBundle:Video:delete" }
+    requirements: { _method: post|delete }

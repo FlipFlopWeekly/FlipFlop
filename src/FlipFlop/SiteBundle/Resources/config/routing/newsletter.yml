@@ -1,0 +1,30 @@
+admin_crud_newsletter:
+    pattern:  /
+    defaults: { _controller: "FlipFlopSiteBundle:Newsletter:index" }
+
+admin_crud_newsletter_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "FlipFlopSiteBundle:Newsletter:show" }
+
+admin_crud_newsletter_new:
+    pattern:  /new
+    defaults: { _controller: "FlipFlopSiteBundle:Newsletter:new" }
+
+admin_crud_newsletter_create:
+    pattern:  /create
+    defaults: { _controller: "FlipFlopSiteBundle:Newsletter:create" }
+    requirements: { _method: post }
+
+admin_crud_newsletter_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "FlipFlopSiteBundle:Newsletter:edit" }
+
+admin_crud_newsletter_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "FlipFlopSiteBundle:Newsletter:update" }
+    requirements: { _method: post|put }
+
+admin_crud_newsletter_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "FlipFlopSiteBundle:Newsletter:delete" }
+    requirements: { _method: post|delete }

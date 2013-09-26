@@ -1,0 +1,30 @@
+admin_crud_category:
+    pattern:  /
+    defaults: { _controller: "FlipFlopSiteBundle:Category:index" }
+
+admin_crud_category_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "FlipFlopSiteBundle:Category:show" }
+
+admin_crud_category_new:
+    pattern:  /new
+    defaults: { _controller: "FlipFlopSiteBundle:Category:new" }
+
+admin_crud_category_create:
+    pattern:  /create
+    defaults: { _controller: "FlipFlopSiteBundle:Category:create" }
+    requirements: { _method: post }
+
+admin_crud_category_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "FlipFlopSiteBundle:Category:edit" }
+
+admin_crud_category_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "FlipFlopSiteBundle:Category:update" }
+    requirements: { _method: post|put }
+
+admin_crud_category_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "FlipFlopSiteBundle:Category:delete" }
+    requirements: { _method: post|delete }
