@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!-- Facebook sharing information tags -->
+
+
+        <title>{{ 'FlipFlop Weekly #' ~ 'X' }}</title>
+
+    <style type="text/css">
+        #outlook a{
+            padding:0;
+        }
+        body{
+            width:100% !important;
+        }
+        body{
+            margin:0;
+            padding:0;
+        }
+        img{
+            border:none;
+            outline:none;
+            text-decoration:none;
+        }
+        #container{
+            background-color:#FFFFFF;
+            height:100%;
+            margin:0;
+            padding:0;
+            width:100%;
+        }
+    /*
+    @tab Page
+    @section primary heading style
+    @tip Primary headings in your message body. Make them big and easy to read.
+    @theme title
+    */
+        .title{
+            /*@editable*/color:#000000;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:28px;
+            /*@editable*/font-weight:bold;
+            /*@editable*/line-height:100%;
+        }
+    /*
+    @tab Page
+    @section secondary heading style
+    @tip Secondary headings in your message body. Make these smaller than your primary titles, but bigger than your content text.
+    @theme subtitle
+    */
+        .subTitle{
+            /*@editable*/color:#FF0000;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:18px;
+            /*@editable*/font-weight:bold;
+            /*@editable*/line-height:100%;
+        }
+    /*
+    @tab Header
+    @section email date text
+    @tip  The styling for your email's email date text. Make it a color and size that is easy to read.
+    */
+        #dateDay,#dateMonth{
+            /*@editable*/color:#4290C8;
+            /*@editable*/font-family:"American Typewriter","Courier New",Courier,monospace;
+            /*@editable*/font-size:14px;
+            /*@editable*/line-height:100%;
+        }
+    /*
+    @tab Header
+    @section section heading
+    @tip The styling for your email's section heading text. Make it a color and size that is easy to read.
+    */
+        #templateHeader .sectionHeading{
+            /*@editable*/color:#689A68;
+            /*@editable*/font-family:"American Typewriter","Courier New",Courier,monospace;
+            /*@editable*/font-size:12px;
+            /*@editable*/line-height:150%;
+        }
+    /*
+    @tab Header
+    @section intro text
+    @tip The styling for your email's intro text. Make it a color and size that is easy to read.
+    */
+        #eventName{
+            /*@editable*/color:#FF0000;
+            /*@editable*/font-family:"American Typewriter","Courier New",Courier,monospace;
+            /*@editable*/font-size:20px;
+            /*@editable*/font-weight:normal;
+            /*@editable*/line-height:150%;
+        }
+    /*
+    @tab Body
+    @section message heading style
+    @tip The styling for your email's message heading text. Make it a color and size that is easy to read.
+    */
+        #messageHeading{
+            /*@editable*/color:#000000;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:28px;
+            /*@editable*/font-weight:bold;
+            /*@editable*/line-height:100%;
+        }
+    /*
+    @tab Body
+    @section text style
+    @tip The styling for your email's main content text. Make it a color and size that is easy to read.
+    */
+        #content,.eventListing,#about{
+            /*@editable*/color:#000000;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:12px;
+            /*@editable*/line-height:150%;
+        }
+    /*
+    @tab Body
+    @section link style
+    @tip The styling for your email's main content hyperlinks. Make it a color that stands out from the rest of your text.
+    */
+        #content a:link,#content a:visited,.eventListing a:link,.eventListing a:visited,#about a:link,#about a:visited{
+            /*@editable*/color:#4290C8;
+            /*@editable*/font-weight:normal;
+            /*@editable*/text-decoration:none;
+        }
+    /*
+    @tab Body
+    @section section heading
+    @tip The styling for your email's section heading text. Make it a color and size that is easy to read.
+    */
+        #templateBody .sectionHeading{
+            /*@editable*/color:#689A68;
+            /*@editable*/font-family:"American Typewriter","Courier New",Courier,monospace;
+            /*@editable*/font-size:12px;
+            /*@editable*/line-height:150%;
+        }
+    /*
+    @tab Body
+    @section event heading
+    @tip The styling for your email's event listing heading text. Make it a color and size that is easy to read.
+    */
+        #eventListingHeading{
+            /*@editable*/color:#FF0000;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:18px;
+            /*@editable*/font-weight:bold;
+            /*@editable*/line-height:100%;
+        }
+    /*
+    @tab Body
+    @section about heading
+    @tip The styling for your email's about section heading text. Make it a color and size that is easy to read.
+    */
+        #aboutHeading{
+            /*@editable*/color:#FF0000;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:18px;
+            /*@editable*/font-weight:bold;
+            /*@editable*/line-height:100%;
+        }
+    /*
+    @tab Footer
+    @section text style
+    @tip The styling for your email's footer text. Make it a color and size that is easy to read.
+    */
+        #footerContent,#rewards{
+            /*@editable*/color:#000000;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:12px;
+            /*@editable*/line-height:150%;
+        }
+    /*
+    @tab Footer
+    @section link style
+    @tip The styling for your email's footer hyperlinks. Make it a color that stands out from the rest of your text.
+    */
+        #footerContent a:link,#footerContent a:visited,#rewards a:link,#rewards a:visited{
+            /*@editable*/color:#4290C8;
+            /*@editable*/font-weight:normal;
+            /*@editable*/text-decoration:none;
+        }
+    /*
+    @tab Footer
+    @section social text style
+    @tip The styling for your email's social block text. Make it a color and size that is easy to read.
+    */
+        .socialCell{
+            /*@editable*/color:#000000;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:12px;
+            /*@editable*/line-height:125%;
+        }
+    /*
+    @tab Footer
+    @section social link style
+    @tip The styling for your email's social block hyperlinks. Make it a color that stands out from the rest of your text.
+    */
+        .socialCell a:link,.socialCell a:visited{
+            /*@editable*/color:#4290C8;
+            /*@editable*/font-weight:normal;
+            /*@editable*/text-decoration:none;
+        }
+</style></head>
+    <body>
+        <center>
+            <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="container">
+                <tr>
+                    <td align="center" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;">
+                            <tr>
+                                <td align="center" valign="top" width="470">
+                                    <br>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="470">
+                                        <!-- // Begin Template Header \\ -->
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="360" id="templateHeader">
+                                                    <tr>
+                                                        <td align="right" valign="top" width="140">
+                                                            <br>
+                                                            <div id="dateDay" mc:edit="date_day">
+                                                                {{ "now"|date("l") }}
+                                                            </div>
+                                                        </td>
+                                                        <td align="center" valign="top" width="80"><div id="khoiDot" mc:edit="khoi_dot">
+                                                            <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/big_green_dot.jpg">
+                                                            </div>
+                                                        </td>
+                                                        <td align="left" valign="top" width="140">
+                                                            <br>
+                                                            <div id="dateMonth" mc:edit="date_month">
+                                                                {{ "now"|date("M jS") }}
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <br>
+                                                            <div class="sectionHeading" mc:edit="event_heading">
+                                                                A MESSAGE FROM
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <div id="eventName" mc:edit="event_name">THE FLIPFLOP CREW</div>
+                                                            <br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/divider.jpg">
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- // End Template Header \\ -->
+
+                                        <!-- // Begin Template Body \\ -->
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="470" id="templateBody">
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="top" width="470">
+                                                            <br>
+                                                            <div id="messageHeading" mc:edit="message_heading">Chers amis Flopiens,</div>
+                                                            <br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left" colspan="3" valign="top" width="470">
+                                                            <br>
+                                                            <div id="content" mc:edit="main"><span lang="fr"><font face="Times New Roman,serif" size="3"><span style="font-size:12pt;"><font color="black" face="Helvetica,sans-serif" size="2"><span style="font-size:9pt;">La FlipFlop Newsletter est de retour cette semaine avec des liens qui vous feront du bien. Attention, il se peut que certains d&#39;entre eux conduisent &agrave; des vid&eacute;os d&eacute;biles (ou vomitives).</span></font></span></font></span><br>
+<br>
+<span lang="fr"><font face="Times New Roman,serif" size="3"><span style="font-size:12pt;"><font color="black" face="Helvetica,sans-serif" size="2"><span style="font-size:9pt;">Godspeed,</span></font><br>
+<br>
+<font color="black" face="Helvetica,sans-serif" size="2"><span style="font-size:9pt;"><b>Le FlipFlop Crew</b></span></font></span></font></span><br>
+</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <br>
+                                                            <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/black_dot.jpg">
+                                                            <br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <br>
+                                                            <div id="eventListingHeading" mc:edit="event_listing_heading">
+                                                                Flip
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr mc:repeatable>
+                                                        <td align="center" colspan="3" valign="top" class="eventListing">
+                                                            <br>
+                                                            <div mc:edit="event_listing">
+                                                                1. Lorem ipsum dolor sit amet.
+                                                                <br>
+                                                                <a href="http://www.example.com">http://www.example.com</a>
+                                                                <br>
+                                                                2. Lorem ipsum dolor sit amet.
+                                                                <br>
+                                                                <a href="http://www.example.com">http://www.example.com</a>
+                                                                <br>
+                                                                3. Lorem ipsum dolor sit amet.
+                                                                <br>
+                                                                <a href="http://www.example.com">http://www.example.com</a>
+                                                                <br>
+                                                                4. Lorem ipsum dolor sit amet.
+                                                                <br>
+                                                                <a href="http://www.example.com">http://www.example.com</a>
+                                                                <br>
+                                                                5. Lorem ipsum dolor sit amet.
+                                                                <br>
+                                                                <a href="http://www.example.com">http://www.example.com</a>
+                                                                <br>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <br>
+                                                            <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/black_dot.jpg">
+                                                            <br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <br>
+                                                            <div id="eventListingHeading" mc:edit="event_listing_heading">
+                                                                Flop
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr mc:repeatable>
+                                                        <td align="center" colspan="3" valign="top" class="eventListing">
+                                                            <br>
+                                                            <div mc:edit="event_listing">
+                                                                1. Lorem ipsum dolor sit amet.
+                                                                <br>
+                                                                <a href="http://www.example.com">http://www.example.com</a>
+                                                                <br>
+                                                                2. Lorem ipsum dolor sit amet.
+                                                                <br>
+                                                                <a href="http://www.example.com">http://www.example.com</a>
+                                                                <br>
+                                                                3. Lorem ipsum dolor sit amet.
+                                                                <br>
+                                                                <a href="http://www.example.com">http://www.example.com</a>
+                                                                <br>
+                                                                4. Lorem ipsum dolor sit amet.
+                                                                <br>
+                                                                <a href="http://www.example.com">http://www.example.com</a>
+                                                                <br>
+                                                                5. Lorem ipsum dolor sit amet.
+                                                                <br>
+                                                                <a href="http://www.example.com">http://www.example.com</a>
+                                                                <br>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <br>
+                                                            <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/black_dot.jpg">
+                                                            <br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <br>
+                                                            <div id="aboutHeading" mc:edit="about_heading">Disclaimer</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left" colspan="3" valign="top">
+                                                            <br>
+                                                            <div id="about" mc:edit="about"><span lang="fr"><font face="Times New Roman,serif" size="3"><span style="font-size:12pt;"><font color="black" face="Helvetica,sans-serif" size="2"><span style="font-size:9pt;">Nous sommes &agrave; la recherche de Flopeurs afin de contribuer &agrave; nos projets : newsletters, happenings et autres conneries. <a href="mailto:flipflopweekly@gmail.com">Contactez-nous</a>.</span></font></span></font></span></div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- // End Template Body \\ -->
+                                        <!-- // Begin Template Footer \\ -->
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="360" id="templateFooter">
+                                                    <tr>
+                                                        <td align="center" valign="middle">
+                                                            <br>
+                                                            <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/divider.jpg">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" valign="top">
+                                                            <br>
+                                                            <div id="footerContent" mc:edit="footer">
+                                                                Copyright &copy; {{ "now"|date("Y") }} *|{{ parameters.crew_name }}|* All rights reserved.
+                                                                <br>
+                                                            </div>
+                                                            <br>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- // End Template Footer \\ -->
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

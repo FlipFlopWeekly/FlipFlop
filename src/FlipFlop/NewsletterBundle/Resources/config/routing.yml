@@ -1,3 +1,7 @@
 flip_flop_newsletter_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: FlipFlopNewsletterBundle:Default:index }
+
+flip_flop_newsletter_template:
+    pattern:  /nl/tpl
+    defaults: { _controller: FlipFlopNewsletterBundle:Default:templating }

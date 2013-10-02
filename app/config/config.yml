@@ -2,6 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: fosuser.yml }
+    - { resource: flipflop.yml }
 
 framework:
     #esi:             ~
