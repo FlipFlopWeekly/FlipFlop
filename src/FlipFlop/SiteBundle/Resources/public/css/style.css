@@ -1,3 +1,75 @@
+/** Standard style **/
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1 {
+  margin: 0.67em 0;
+  font-size: 2em;
+}
+
 a {
     color: #ED32F1;
+}
+
+/** Common specific style **/
+
+html {
+    background: rgb(238,238,238);
+}
+
+/* Website width */
+body {
+    width: 960px;
+    margin: auto;
+}
+
+.aubergine {
+    color: #563d7c;
+}
+
+.aubergine-container {
+    background-color: #563d7c;
+}
+
+.gris {
+    color: #eeeeee;
+}
+
+.gris-container {
+    background-color: #eeeeee;
+}
+
+.vert-anis {
+    color: #a7fda7;
+}
+
+.vert-anis-container {
+    background-color: #a7fda7;
+}
+
+/** Common specific elements **/
+.page-header, .page-footer {
+    padding: 10px;
+}
+
+.page-section {
+    padding: 15px;
+    border-bottom: 1px #a7fda7;
 }

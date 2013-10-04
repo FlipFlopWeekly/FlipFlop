@@ -25,6 +25,8 @@ class AppKernel extends Kernel
             new Bazinga\ExposeTranslationBundle\BazingaExposeTranslationBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
 
+            new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
+
             // FlipFlop Bundles
             new FlipFlop\SiteBundle\FlipFlopSiteBundle(),
             new FlipFlop\NewsletterBundle\FlipFlopNewsletterBundle(),

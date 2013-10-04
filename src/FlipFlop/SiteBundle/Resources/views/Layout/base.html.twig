@@ -1,18 +1,28 @@
 {% set _content = block('content') %}
 
 <!DOCTYPE html>
-<html>
+<html class="aubergine-container">
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}FlipFlop - Beta Symfony{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset( 'bundles/flipflopsite/images/favicon.ico' ) }}" />
 
+        {# FlipFlop scripts #}
         {% include 'FlipFlopSiteBundle:Layout:css.html.twig' %}
         {% include 'FlipFlopSiteBundle:Layout:js.html.twig' %}
     </head>
 
-    <body >
+    <body>
+        {% block page_header %}
+            {% include 'FlipFlopSiteBundle:Layout:Element/header.html.twig' %}
+        {% endblock page_header %}
+
         {% if _content is not empty %}
-            {{ _content|raw }}
+            {% include 'FlipFlopSiteBundle:Layout:Element/main_content.html.twig' %}
         {% endif %}
+
+        {% block page_footer %}
+            {% include 'FlipFlopSiteBundle:Layout:Element/footer.html.twig' %}
+        {% endblock page_footer %}
     </body>
 </html>
