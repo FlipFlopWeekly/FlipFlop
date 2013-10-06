@@ -1,28 +1,35 @@
 {% set _content = block('content') %}
 
 <!DOCTYPE html>
-<html class="aubergine-container">
+<html>
     <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}FlipFlop - Beta Symfony{% endblock %}</title>
-        <link rel="icon" type="image/x-icon" href="{{ asset( 'bundles/flipflopsite/images/favicon.ico' ) }}" />
-
-        {# FlipFlop scripts #}
+        {% include 'FlipFlopSiteBundle:Layout:meta.html.twig' %}
+        <title>
+        	{% block title %}
+        		{% include 'FlipFlopSiteBundle:Layout:title.html.twig' %}
+        	{% endblock %}
+       	</title>
         {% include 'FlipFlopSiteBundle:Layout:css.html.twig' %}
         {% include 'FlipFlopSiteBundle:Layout:js.html.twig' %}
     </head>
 
-    <body>
-        {% block page_header %}
-            {% include 'FlipFlopSiteBundle:Layout:Element/header.html.twig' %}
-        {% endblock page_header %}
-
-        {% if _content is not empty %}
-            {% include 'FlipFlopSiteBundle:Layout:Element/main_content.html.twig' %}
-        {% endif %}
-
-        {% block page_footer %}
-            {% include 'FlipFlopSiteBundle:Layout:Element/footer.html.twig' %}
-        {% endblock page_footer %}
+    <body >
+    	<div id="wrap">
+    		<div id="wrap-in">
+		    	{% block header %}
+		       		{%  include 'FlipFlopSiteBundle:Layout:header.html.twig' %}
+		       	{% endblock %}
+		       	<div id="main">
+			       	{% block main %}
+			       		<div id="carrousel">
+							{%  include 'FlipFlopSiteBundle:Layout:carrousel.html.twig' %}
+						</div>
+			       	{% endblock %}
+		       	</div>
+	       	</div>
+	        {% if _content is not empty %}
+	            {{ _content|raw }}
+	        {% endif %}
+        </div>
     </body>
 </html>
