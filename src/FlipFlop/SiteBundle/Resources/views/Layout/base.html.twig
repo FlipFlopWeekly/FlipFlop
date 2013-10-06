@@ -27,9 +27,11 @@
 			       	{% endblock %}
 		       	</div>
 	       	</div>
-	        {% if _content is not empty %}
-	            {{ _content|raw }}
-	        {% endif %}
+                <div id="main-content">
+                    {% if _content is not empty %}
+                        {{ _content|raw }}
+                    {% endif %}
+                </div>
         </div>
     </body>
 </html>

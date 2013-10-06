@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 $(document).ready(function() {
-    $('#slideshowHolder').jqFancyTransitions({ 
+    $('#slideshowHolder').jqFancyTransitions({
         width: 975,
         height: 300,
         effect: 'zipper', // wave, zipper, curtain
@@ -17,5 +17,16 @@ $(document).ready(function() {
         navigation: true, // prev and next navigation buttons
         links: true // show images as links
 
+    });
+    
+    Modernizr.load({
+        test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+        yep: ['bundles/flipflopsite/js/jquery-1.8.3.js', 'bundles/flipflopsite/js/jquery.hoverfold.js'],
+        nope: '../css/fallback.css',
+        callback: function(url, result, key) {
+            if (url === 'bundles/flipflopsite/js/jquery.hoverfold.js') {
+                $('#grid').hoverfold();
+            }
+        }
     });
 });

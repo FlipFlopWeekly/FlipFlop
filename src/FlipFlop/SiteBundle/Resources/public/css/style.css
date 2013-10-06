@@ -11,10 +11,7 @@ a {
     z-index: 6;
 }
 body {
-    background-attachment: fixed;
-    background-color: #F2F2F2;
-    background-image: linear-gradient(#E2E2E2, #F2F2F2);
-    background-repeat: no-repeat;
+    background: #ddd url(../images/bg.jpg) repeat top left;
     color: #FFFFFF;
     font-family: "Lucida Grande",Arial,sans-serif;
     font-size: 12px;
