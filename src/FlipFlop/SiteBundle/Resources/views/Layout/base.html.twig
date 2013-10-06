@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        {% include 'FlipFlopSiteBundle:Layout:meta.html.twig' %}
+        {% include 'FlipFlopSiteBundle:Layout:parts/meta.html.twig' %}
         <title>
         	{% block title %}
-        		{% include 'FlipFlopSiteBundle:Layout:title.html.twig' %}
+        		{% include 'FlipFlopSiteBundle:Layout:parts/title.html.twig' %}
         	{% endblock %}
        	</title>
         {% include 'FlipFlopSiteBundle:Layout:css.html.twig' %}
@@ -17,12 +17,12 @@
     	<div id="wrap">
     		<div id="wrap-in">
 		    	{% block header %}
-		       		{%  include 'FlipFlopSiteBundle:Layout:header.html.twig' %}
+		       		{%  include 'FlipFlopSiteBundle:Layout:parts/header.html.twig' %}
 		       	{% endblock %}
 		       	<div id="main">
 			       	{% block main %}
 			       		<div id="carrousel">
-							{%  include 'FlipFlopSiteBundle:Layout:carrousel.html.twig' %}
+							{%  include 'FlipFlopSiteBundle:Layout:parts/carrousel.html.twig' %}
 						</div>
 			       	{% endblock %}
 		       	</div>
