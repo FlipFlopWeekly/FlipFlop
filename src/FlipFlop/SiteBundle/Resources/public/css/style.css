@@ -11,7 +11,7 @@ a {
     z-index: 6;
 }
 body {
-	background-attachment: fixed;
+    background-attachment: fixed;
     background-color: #F2F2F2;
     background-image: linear-gradient(#E2E2E2, #F2F2F2);
     background-repeat: no-repeat;
@@ -25,12 +25,26 @@ body {
 }
 
 #wrap {
-	margin: 0 auto;
+    margin: 0 auto;
     min-height: 550px;
     width: 975px;
 }
 
 #wrap-in {
-	min-height: 550px;
+    min-height: 550px;
     width: 975px;
+}
+
+.slider-title{
+    padding-left: 15px;
+}
+
+.txt {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 15px;
+    line-height: 20px;
+}
+.txt p{
+    text-align: justify
 }
