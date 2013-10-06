@@ -5,31 +5,43 @@
     <head>
         {% include 'FlipFlopSiteBundle:Layout:parts/meta.html.twig' %}
         <title>
-        	{% block title %}
-        		{% include 'FlipFlopSiteBundle:Layout:parts/title.html.twig' %}
-        	{% endblock %}
-       	</title>
+            {% block title %}
+                {% include 'FlipFlopSiteBundle:Layout:parts/title.html.twig' %}
+            {% endblock %}
+        </title>
+
+        <link rel="icon" type="image/png" href="{{ asset( 'bundles/flipflopsite/images/logo_ff.png' ) }}" />
+        <link rel="shortcut icon" type="image/png" href="{{ asset( 'bundles/flipflopsite/images/logo_ff.png' ) }}" />
+        <link rel="apple-touch-icon-precomposed" href="{{ asset( 'bundles/flipflopsite/images/logo/apple-touch-icon-precomposed.png' ) }}" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72"  href="{{ asset( 'bundles/flipflopsite/images/logo/apple-touch-icon-72x72-precomposed.png' ) }}" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114"  href="{{ asset( 'bundles/flipflopsite/images/logo/apple-touch-icon-114x114-precomposed.png' ) }}" />
+
         {% include 'FlipFlopSiteBundle:Layout:css.html.twig' %}
         {% include 'FlipFlopSiteBundle:Layout:js.html.twig' %}
     </head>
 
-    <body >
-    	<div id="wrap">
-    		<div id="wrap-in">
-		    	{% block header %}
-		       		{%  include 'FlipFlopSiteBundle:Layout:parts/header.html.twig' %}
-		       	{% endblock %}
-		       	<div id="main">
-			       	{% block main %}
-			       		<div id="carrousel">
-							{%  include 'FlipFlopSiteBundle:Layout:parts/carrousel.html.twig' %}
-						</div>
-			       	{% endblock %}
-		       	</div>
-	       	</div>
-	        {% if _content is not empty %}
-	            {{ _content|raw }}
-	        {% endif %}
+    <body>
+        <div id="wrap">
+            <div id="wrap-in">
+                {% block header %}
+                    {%  include 'FlipFlopSiteBundle:Layout:parts/header.html.twig' %}
+                {% endblock %}
+                <div id="main">
+                   {% block main %}
+                       <div id="carrousel">
+                       {%  include 'FlipFlopSiteBundle:Layout:parts/carrousel.html.twig' %}
+                    </div>
+                   {% endblock %}
+                </div>
+            </div>
+            <div id="main-content">
+                {% if _content is not empty %}
+                    {% include 'FlipFlopSiteBundle:Layout:Element/main_content.html.twig' %}
+                {% endif %}
+            </div>
+            {% block page_footer %}
+                {% include 'FlipFlopSiteBundle:Layout:Element/footer.html.twig' %}
+            {% endblock page_footer %}
         </div>
     </body>
 </html>
