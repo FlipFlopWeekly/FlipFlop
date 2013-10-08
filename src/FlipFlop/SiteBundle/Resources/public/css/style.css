@@ -1,25 +1,34 @@
-a {
-    color: #ED32F1;
-}
-
-#logo a {
-    background: url(../images/logo.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
-    display: block;
-    height: 70px;
-    position: relative;
-    width: 300px;
-    z-index: 6;
+html {
+    /* background: #ddd url(../images/bg.jpg) repeat top left; */
+    background-color:#563D7C;
+background-image: linear-gradient(white 2px, transparent 2px),
+linear-gradient(90deg, white 2px, transparent 2px),
+linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
 }
 
 body {
-    background: #ddd url(../images/bg.jpg) repeat top left;
+    /* background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px; */
+
+    background-color:#282828;
+
     color: #FFFFFF;
     font-family: "Lucida Grande",Arial,sans-serif;
     font-size: 12px;
     letter-spacing: normal;
-    margin: 0;
-    padding: 0;
     word-spacing: normal;
+
+    width: 980px;
+    padding: 0;
+    margin: auto;
 }
 
 footer {
@@ -37,6 +46,28 @@ footer {
     width: 975px;
 }
 
+a {
+    color: #ED32F1;
+}
+
+#logo a {
+    background: url(../images/logo.png) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 70px;
+    position: relative;
+    width: 300px;
+    z-index: 6;
+}
+
+#carrousel a {
+    color: white;
+    font-weight: 800;
+}
+
+#carrousel a.ft-button-slideshowHolder-active {
+    color: #a7fda7;
+}
+
 .slider-title{
     padding-left: 15px;
 }
@@ -50,3 +81,5 @@ footer {
 .txt p{
     text-align: justify
 }
+
+

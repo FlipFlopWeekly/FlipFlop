@@ -20,7 +20,6 @@
         {% include 'FlipFlopSiteBundle:Layout:js.html.twig' %}
     </head>
 
-<<<<<<< HEAD
     <body>
         <div id="wrap">
             <div id="wrap-in">
@@ -43,27 +42,6 @@
             {% block page_footer %}
                 {% include 'FlipFlopSiteBundle:Layout:Element/footer.html.twig' %}
             {% endblock page_footer %}
-=======
-    <body >
-    	<div id="wrap">
-    		<div id="wrap-in">
-		    	{% block header %}
-		       		{%  include 'FlipFlopSiteBundle:Layout:parts/header.html.twig' %}
-		       	{% endblock %}
-		       	<div id="main">
-			       	{% block main %}
-			       		<div id="carrousel">
-							{%  include 'FlipFlopSiteBundle:Layout:parts/carrousel.html.twig' %}
-						</div>
-			       	{% endblock %}
-		       	</div>
-	       	</div>
-                <div id="main-content">
-                    {% if _content is not empty %}
-                        {{ _content|raw }}
-                    {% endif %}
-                </div>
->>>>>>> branch 'dev' of https://github.com/FlipFlopWeekly/FlipFlop.git
         </div>
     </body>
 </html>

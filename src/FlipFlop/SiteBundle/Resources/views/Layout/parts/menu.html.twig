@@ -1,20 +1,17 @@
 <ul id="nav">
-    <li><a href="#">Parent 01</a></li>
-    <li><a href="#" class="selected">Parent 02 > </a>
+    <li><a href="{{ path('flipflop_site_homepage') }}" class="selected">Home</a></li>
+    <li><a href="#">Vidéos > </a>
         <ul>
-            <li><a href="#">Item 01</a></li>
-            <li><a href="#" class="selected">Item 02</a></li>
-            <li><a href="#">Item 03</a></li>
+            <li><a href="{{ path('admin_crud_video') }}">Liste des vidéos</a></li>
+            <li><a href="{{ path('admin_crud_video_new') }}">Créer vidéo</a></li>
         </ul>
         <div class="clear"></div></li>
-    <li><a href="#">Parent 03 > </a>
+    <li><a href="#">Newsletters > </a>
         <ul>
-            <li><a href="#">Item 04</a></li>
-            <li><a href="#">Item 05</a></li>
-            <li><a href="#">Item 06</a></li>
-            <li><a href="#">Item 07</a></li>
+            <li><a href="{{ path('admin_crud_newsletter') }}">Liste des newsletters</a></li>
+            <li><a href="{{ path('admin_crud_newsletter_new') }}">Créer newsletter</a></li>
         </ul>
         <div class="clear"></div></li>
-    <li><a href="#">Parent 04</a></li>
+    <li><a href="{{ path('flip_flop_newsletter_template') }}" target="_blank">Template newsletter [...]</a></li>
 </ul>
 <div class="clear"></div>

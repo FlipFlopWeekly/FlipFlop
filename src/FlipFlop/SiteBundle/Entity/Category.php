@@ -32,7 +32,7 @@ class Category
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -48,16 +48,26 @@ class Category
     public function setWording($wording)
     {
         $this->wording = $wording;
-    
+
         return $this;
     }
 
     /**
      * Get wording
      *
-     * @return string 
+     * @return string
      */
     public function getWording()
+    {
+        return $this->wording;
+    }
+
+    /**
+    * To string method
+    *
+    * @return string
+    */
+    public function __toString()
     {
         return $this->wording;
     }
