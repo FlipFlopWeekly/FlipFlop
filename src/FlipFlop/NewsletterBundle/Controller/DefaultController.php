@@ -11,6 +11,9 @@ class DefaultController extends Controller
         return $this->render('FlipFlopNewsletterBundle:Default:index.html.twig', array('name' => $name));
     }
 
+    /**
+     * Static template of the newsletter.
+     */
     public function templatingaction()
     {
         $parameters = array();
