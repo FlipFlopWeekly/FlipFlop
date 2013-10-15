@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    {% include 'FlipFlopNewsletterBundle:Layout:Part/template.head.html.twig' with {'newsletter_n': 1} %}
+    <body>
+        <center>
+            <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="container">
+                <tr>
+                    <td align="center" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="600" style="width:600px;">
+                            <tr>
+                                <td align="center" valign="top" width="470">
+                                    <br>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="470">
+                                        {% include 'FlipFlopNewsletterBundle:Layout:Part/template.header.html.twig' %}
+                                        <!-- // Begin Template Body \\ -->
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="470" id="templateBody">
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="top" width="470">
+                                                            <br>
+                                                            <div id="messageHeading" mc:edit="message_heading">Chers amis Flopiens,</div>
+                                                            <br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left" colspan="3" valign="top" width="470">
+                                                            {% include 'FlipFlopNewsletterBundle:Layout:Part/template.introduction.html.twig' %}
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <br>
+                                                            <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/black_dot.jpg">
+                                                            <br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <br>
+                                                            <div id="eventListingHeading" mc:edit="event_listing_heading">
+                                                                Flip
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr mc:repeatable>
+                                                        <td align="center" colspan="3" valign="top" class="eventListing">
+                                                            <br>
+                                                            <div mc:edit="event_listing">
+                                                                {% include 'FlipFlopNewsletterBundle:Element:link.html.twig' with {'number': 1, 'title': 'Lorem ipsum dolor sit amet.', 'url': 'http://www.example.com'} %}
+                                                                {% include 'FlipFlopNewsletterBundle:Element:link.html.twig' with {'number': 2, 'title': 'Lorem ipsum dolor sit amet.', 'url': 'http://www.example.com'} %}
+                                                                {% include 'FlipFlopNewsletterBundle:Element:link.html.twig' with {'number': 3, 'title': 'Lorem ipsum dolor sit amet.', 'url': 'http://www.example.com'} %}
+                                                                {% include 'FlipFlopNewsletterBundle:Element:link.html.twig' with {'number': 4, 'title': 'Lorem ipsum dolor sit amet.', 'url': 'http://www.example.com'} %}
+                                                                {% include 'FlipFlopNewsletterBundle:Element:link.html.twig' with {'number': 5, 'title': 'Lorem ipsum dolor sit amet.', 'url': 'http://www.example.com'} %}
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <br>
+                                                            <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/black_dot.jpg">
+                                                            <br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <br>
+                                                            <div id="eventListingHeading" mc:edit="event_listing_heading">
+                                                                Flop
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr mc:repeatable>
+                                                        <td align="center" colspan="3" valign="top" class="eventListing">
+                                                            <br>
+                                                            <div mc:edit="event_listing">
+                                                                {% include 'FlipFlopNewsletterBundle:Element:link.html.twig' with {'number': 1, 'title': 'Lorem ipsum dolor sit amet.', 'url': 'http://www.example.com'} %}
+                                                                {% include 'FlipFlopNewsletterBundle:Element:link.html.twig' with {'number': 2, 'title': 'Lorem ipsum dolor sit amet.', 'url': 'http://www.example.com'} %}
+                                                                {% include 'FlipFlopNewsletterBundle:Element:link.html.twig' with {'number': 3, 'title': 'Lorem ipsum dolor sit amet.', 'url': 'http://www.example.com'} %}
+                                                                {% include 'FlipFlopNewsletterBundle:Element:link.html.twig' with {'number': 4, 'title': 'Lorem ipsum dolor sit amet.', 'url': 'http://www.example.com'} %}
+                                                                {% include 'FlipFlopNewsletterBundle:Element:link.html.twig' with {'number': 5, 'title': 'Lorem ipsum dolor sit amet.', 'url': 'http://www.example.com'} %}
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <br>
+                                                            <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/black_dot.jpg">
+                                                            <br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center" colspan="3" valign="middle">
+                                                            <br>
+                                                            <div id="aboutHeading" mc:edit="about_heading">Disclaimer</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left" colspan="3" valign="top">
+                                                            {% include 'FlipFlopNewsletterBundle:Layout:Part/template.conclusion.html.twig' %}
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- // End Template Body \\ -->
+                                        {% include 'FlipFlopNewsletterBundle:Layout:Part/template.footer.html.twig' %}
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

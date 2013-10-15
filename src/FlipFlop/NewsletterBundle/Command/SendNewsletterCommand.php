@@ -23,9 +23,9 @@ class SendNewsletterCommand extends ContainerAwareCommand
      */
     protected function configure()
     {
-        $this->setName('flipflop:newsletter:send')
-            ->setDescription('Send newsletter to Flipflopiens')
-            ->addArgument('easter-egg', InputArgument::OPTIONAL, "Easter egg :)");
+        $this->setName( 'flipflop:newsletter:send' )
+            ->setDescription( 'Send newsletter to Flipflopiens' )
+            ->addArgument( 'easter-egg', InputArgument::OPTIONAL, 'Easter egg :)' );
     }
 
 
@@ -39,30 +39,29 @@ class SendNewsletterCommand extends ContainerAwareCommand
     {
         // Initialize some variables
         $container = $this->getContainer();
-        $em = $container->get('doctrine')->getManager();
+        $em = $container->get( 'doctrine' )->getManager();
+        $service = $container->get( 'flip_flop.newsletter.mailing' );
+        $parameters = $service->getParameters();
 
-        $out->writeln('<info>Call command ' . $this->getName() . '</info>');
+        $out->writeln( '<info>Call command ' . $this->getName() . '</info>' );
 
-        $currentDate = date('Y-m-d');
+        $currentDate = date( 'Y-m-d' );
         $out->writeln("Current date : $currentDate");
 
 //         $newsletter = $this->getContainer()
 //             ->get( 'doctrine' )
 //             ->getRepository( 'FlipFlopSiteBundle:Newsletter' );
 
-        $parameters = array();
-        $parameters['crew_name'] = $container->parameters['crew_name'];
-
         $message = \Swift_Message::newInstance()
             ->setSubject( 'FlipFlopWeekly' )
             ->setFrom( 'no-reply@logica.com' )
             ->setTo( 'seb.correaud@logica.com' )
-            ->setBody( $container->get( 'templating' )->render( 'FlipFlopNewsletterBundle:Default:template.html.twig', array('parameters' => $parameters) ), 'text/html' );
+            ->setBody( $container->get( 'templating' )->render( $service->getTemplateName(), array( 'parameters' => $parameters ) ), 'text/html' );
 
         $container->get( 'mailer' )->send( $message );
 
         $easter = $in->getArgument( 'easter-egg' );
-        $out->writeln("Current params : $easter");
+        $out->writeln( "Current params : $easter" );
 
         // Throw mails from spooler
         $spool = $container->get( 'mailer' )->getTransport()->getSpool();
