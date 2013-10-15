@@ -4,4 +4,4 @@ flip_flop_newsletter_homepage:
 
 flip_flop_newsletter_template:
     pattern:  /nl/tpl
-    defaults: { _controller: FlipFlopNewsletterBundle:Default:templating }
+    defaults: { _controller: FlipFlopNewsletterBundle:Service:templating }

@@ -1,7 +1,7 @@
 parameters:
-#    flip_flop_newsletter.example.class: FlipFlop\NewsletterBundle\Example
+    flip_flop.newsletter.mailing.class: FlipFlop\NewsletterBundle\Controller\ServiceController
 
 services:
-#    flip_flop_newsletter.example:
-#        class: %flip_flop_newsletter.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+    flip_flop.newsletter.mailing:
+        class: %flip_flop.newsletter.mailing.class%
+        arguments: [@service_container]
