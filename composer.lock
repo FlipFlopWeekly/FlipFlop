@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "3594bd882b0b0c52cc8dc5d1b7050e9f",
+    "hash": "013534466f71a47f5adcc2419e459f26",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -906,6 +906,47 @@
                 "sql"
             ],
             "time": "2013-04-26 18:42:52"
+        },
+        {
+            "name": "jlong/sass-twitter-bootstrap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jlong/sass-bootstrap.git",
+                "reference": "9c306cfb2f2c5808913ce5ae54796dbcb99a7560"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jlong/sass-bootstrap/zipball/9c306cfb2f2c5808913ce5ae54796dbcb99a7560",
+                "reference": "9c306cfb2f2c5808913ce5ae54796dbcb99a7560",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                },
+                {
+                    "name": "John W. Long"
+                },
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                }
+            ],
+            "description": "A sass port of the sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "homepage": "http://github.com/jlong/sass-twitter-bootstrap/",
+            "keywords": [
+                "bootstrap",
+                "css",
+                "sass"
+            ],
+            "time": "2013-09-22 10:49:22"
         },
         {
             "name": "jordillonch/crud-generator",
@@ -2140,7 +2181,8 @@
         "elao/web-profiler-extra-bundle": 20,
         "stof/doctrine-extensions-bundle": 20,
         "jordillonch/crud-generator": 20,
-        "mopa/bootstrap-bundle": 20
+        "mopa/bootstrap-bundle": 20,
+        "jlong/sass-twitter-bootstrap": 20
     },
     "platform": {
         "php": ">=5.3.3"
