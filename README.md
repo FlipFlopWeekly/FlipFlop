@@ -115,6 +115,7 @@ Une demande doit être faite afin d'avoir accès aux documents partagés afin de
 Ces documents sont hébergés sur un espace Google Drive privé.
 
 ### 10) Go !
-=======
 
-C'est parti pour le dev !
+C'est parti pour le dev ! Nous comptons sur vous :)
+
+=======
