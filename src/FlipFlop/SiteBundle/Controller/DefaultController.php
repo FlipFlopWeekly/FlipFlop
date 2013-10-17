@@ -14,6 +14,11 @@ class DefaultController extends Controller
 
     public function indexAction()
     {
+    	// If no user is connected redirect to login page
+    	if (is_null($this->getUser())) {
+    		return $this->redirect($this->generateUrl('flipflop_site_loginpage'));
+    	}
+    	
         return $this->render('FlipFlopSiteBundle:StaticPages:home.html.twig');
     }
 }

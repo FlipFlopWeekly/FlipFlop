@@ -17,3 +17,15 @@ flipflop_site_welcome:
 flipflop_site_homepage:
     pattern:  /
     defaults: { _controller: FlipFlopSiteBundle:Default:index }
+
+flipflop_site_loginpage:
+    pattern:  /login/
+    defaults: { _controller: FlipFlopAuthBundle:Login:login }
+
+flipflop_site_logout:
+    pattern:  /logout/
+    defaults: { _controller: FlipFlopAuthBundle:Login:logout }
+
+flipflop_site_logincheck:
+    pattern:  /login/check/
+    defaults: { _controller: FlipFlopAuthBundle:Login:check }
