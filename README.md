@@ -13,7 +13,7 @@ Pour travailler sur le projet, les outils suivants sont nécessaires :
 
 ### 1) Installation de git
 
-[git](http://git-scm.com/) est installé par défaut usr la plupart des systèmes UNIX. Pour Windows, il est conseillé de tout d'abord installer [cygwin](http://www.cygwin.com/).
+[git](http://git-scm.com/) est installé par défaut sur la plupart des systèmes UNIX. Pour Windows, il est conseillé de tout d'abord installer [cygwin](http://www.cygwin.com/).
 
 Lors de l'installation, le wizard de cygwin propose le téléchargement d'un certain nombre de paquets. Il est recommandé de prendre les paquets suivants (liste non exhaustive) :
 
@@ -86,10 +86,28 @@ Il sera peut-être nécessaire de jouer avec les droits / caches :
 
 Les informations de la base sont fournies (et modifiables) dans `app/config/parameters.yml`
 
+Depuis la racine du projet, pour synchroniser le schéma de la base de donnée :
+
+```bash
+  app/console doctrine:schema:update --dump-sql
+  app/console doctrine:schema:update --force
+```
+NOTE : La première commande permet de vérifier les requêtes qui vont être exécutées.
+
 ### 7) Mettre en place un VHOST
 
 Selon l'environnement, utiliser l'un des VHOST dans `config_vhost/dev/` en le modifiant (en local) au besoin.
 
-### 8) Go !
+### 8) Configurer GIT
+
+```bash
+  git config core.autocrlf false
+  git config core.filemode false
+  git config user.name [usernameGIT]
+  git config user.email [emailGIT]
+```
+[usernameGIT] et [emailGIT] doivent être remplacés par les informations de votre compte Github.
+
+### 9) Go !
 
 C'est parti pour le dev !
