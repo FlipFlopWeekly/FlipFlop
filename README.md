@@ -107,6 +107,7 @@ Selon l'environnement, utiliser l'un des VHOST dans `config_vhost/dev/` en le mo
   git config user.email [emailGIT]
 ```
 [usernameGIT] et [emailGIT] doivent être remplacés par les informations de votre compte Github.
+Ceci doit être paramétré de manière local au projet (à la racine du projet)
 
 ### 9) Lire la documentation projet
 
