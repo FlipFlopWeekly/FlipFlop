@@ -4,14 +4,25 @@
 	</div>
 </div>
 <div id="m_userbox">
-	<ul class="nolog">
-		<li>
-			<a href="#">Sign up</a>
-		</li>
-		<li>
-			<a href="#">Login</a>
-		</li>
-	</ul>
+	{% if app.user is null %}
+		<ul class="nolog">
+			<li>
+				<a href="#">Sign up</a>
+			</li>
+			<li>
+				<a href="{{ path('flipflop_site_loginpage') }}">Login</a>
+			</li>
+		</ul>
+	{% else %}
+		<ul class="nolog">
+			<li>
+				<a href="{{ path('flipflop_site_logout') }}">Logout</a>
+			</li>
+			<li>
+				<a href="#">{{ app.user.username }}</a>
+			</li>
+		</ul>
+	{% endif %}
 </div>
 <div id="menu">
 	{%  include 'FlipFlopSiteBundle:Layout:parts/menu.html.twig' %}

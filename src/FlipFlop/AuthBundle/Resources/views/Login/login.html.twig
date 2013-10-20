@@ -1,23 +1,26 @@
 {% extends 'FlipFlopSiteBundle::Layout/base.html.twig' %}
 
 {% block content %}
-        {% if error %}
-            <div>{{ error }}</div>
-        {% endif %}
-        <section class="loginform">
-                <form action="{{ path('flipflop_site_logincheck') }}" method="POST">
-                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
- 
-                    <label for="username">Email</label>
-                    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
-
-                    <label for="password">Mot de passe</label>
-                    <input type="password" id="password" name="_password" required="required" />
-
-                    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-                    <label for="remember_me">Se souvenir de moi</label>
-
-                    <input type="submit" id="submit" name="_submit" value="Se connecter" />
-                </form>
-        </section>
+	{% if error %}
+    	<div>{{ error }}</div>
+    {% endif %}
+    <section class="loginform">
+    	<form action="{{ path('flipflop_site_logincheck') }}" method="POST">
+	    	<table cellspacing="15px">
+	        	<input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+	        	<tr style="margin-bottom: 15px;">
+	            	<td><label for="username">Email</label></td>
+	            	<td><input type="text" id="username" name="_username" value="{{ last_username }}" required="required" /></td>
+	            </tr>
+	            <tr style="margin-bottom: 15px;">
+	            	<td><label for="password">Mot de passe</label></td>
+	            	<td><input type="password" id="password" name="_password" required="required" /></td>
+	            </tr>
+	            <tr style="margin-bottom: 15px;">
+	            	<td><input type="checkbox" id="remember_me" name="_remember_me" value="on" /><label for="remember_me">Se souvenir de moi</label></td>
+	            	<td><input type="submit" id="submit" name="_submit" value="Se connecter" /></td>
+	            </tr>
+	        </table>
+        </form>
+    </section>
 {% endblock %}
