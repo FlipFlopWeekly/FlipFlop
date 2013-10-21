@@ -64,7 +64,7 @@ Tout d'abord, déterminer quel binaire PHP est utilisé dans le terminal, et que
 
 Pour votre santé mentale, il est conseillé que ce php et son .ini soient les mêmes que ceux utilisés dans votre stack LAMP.
 
-Il est également conseillé que la version de PHP soit à jour. À l'heure actuelle, la dernière version stable est la 5.5.4.
+Il est également conseillé que la version de PHP soit à jour. À l'heure actuelle, la dernière version stable est la 5.5.5.
 
 Il faut ensuite éditer le php.ini pour activer les extensions curl et openssl en décommentant les lignes correspondantes.
 
@@ -107,7 +107,7 @@ Selon l'environnement, utiliser l'un des VHOST dans `config_vhost/dev/` en le mo
   git config user.email [emailGIT]
 ```
 [usernameGIT] et [emailGIT] doivent être remplacés par les informations de votre compte Github.
-Ceci doit être paramétré de manière local au projet (à la racine du projet)
+Ceci doit être paramétré de manière locale au projet (à la racine du projet)
 
 ### 9) Lire la documentation projet
 
