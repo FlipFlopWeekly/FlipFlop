@@ -13,3 +13,10 @@ app/config/parameters.ini
 /.settings
 /.buildpath
 /.project
+
+# Misc
+composer.lock
+/bin
+
+# Koding fix
+web/app_dev.php
