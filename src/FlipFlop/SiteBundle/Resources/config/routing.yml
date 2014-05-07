@@ -1,3 +1,0 @@
-flipflop_site_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: FlipFlopSiteBundle:Default:index }

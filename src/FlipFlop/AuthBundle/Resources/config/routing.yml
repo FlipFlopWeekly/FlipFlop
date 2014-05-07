@@ -1,3 +1,0 @@
-flip_flop_auth_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: FlipFlopAuthBundle:Default:index }
