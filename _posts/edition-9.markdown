@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "FlipFlop Weekly #9 - Performance Art Edition"
-date:   2013-11-12 00:13:57 +0100
+date:   2013-11-12 00:13:57
 categories: newsletter TCOL
 ---
 

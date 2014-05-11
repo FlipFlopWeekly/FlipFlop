@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "FlipFlop Weekly #0"
-date:   2013-08-19 14:17:44 +0200
+date:   2013-08-19 14:17:44
 categories: newsletter special SCOR
 ---
 

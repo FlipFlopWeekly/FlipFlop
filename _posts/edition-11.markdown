@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "FlipFlop Weekly #11"
-date:   2013-11-25 09:24:44 +0100
+date:   2013-11-25 09:24:44
 categories: newsletter LSIM
 ---
 

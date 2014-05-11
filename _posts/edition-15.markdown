@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "FlipFlop Weekly #15 - Short Film Edition"
-date:   2014-01-06 11:20:45 +0100
+date:   2014-01-06 11:20:45
 categories: newsletter special TCOL
 ---
 

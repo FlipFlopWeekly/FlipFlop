@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "FlipFlop Weekly #8"
-date:   2013-11-12 00:12:20 +0100
+date:   2013-11-12 00:12:20
 categories: newsletter TCOL
 ---
 
