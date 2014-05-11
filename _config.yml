@@ -1,3 +1,8 @@
-name: Your New Jekyll Site
+name: FlipFlop Weekly
+url: http://flipflop.trgdy.com
+
 markdown: redcarpet
 pygments: true
+
+# See http://jekyllrb.com/docs/permalinks/.
+permalink: /:month-:day-:year/:title.html
