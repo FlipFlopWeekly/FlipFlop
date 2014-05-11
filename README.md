@@ -1,7 +1,7 @@
-FlipFlop
+[FlipFlop](http://flipflop.trgdy.com/)
 ========
 
-FlipFlop Weekly's website, where the magic happens.
+[FlipFlop Weekly's website](http://flipflop.trgdy.com/), where the magic happens.
 
 > Built with [Jekyll](http://jekyllrb.com/), hosted on [GitHub Pages](https://pages.github.com/)
 
