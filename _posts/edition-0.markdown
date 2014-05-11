@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Edition 0"
-date:   2014-05-08 09:25:40
-categories: flipflop newsletter
+title:  "FlipFlop Weekly #0"
+date:   2013-08-19 14:17:44 +0200
+categories: newsletter special SCOR
 ---
 
 ## Flip
@@ -12,7 +12,7 @@ categories: flipflop newsletter
 - [Hip hop / violin style](http://www.youtube.com/watch?v=hnLsfnchbGs)
 - [Restons violons, devenons geek](http://www.youtube.com/watch?v=KtQb2axKpuw)
 - [Parce que la voix du mec ne gâche pas le clip K (mature content)](http://vimeo.com/62768231)
-    
+
 ## Flop
 
 - [Chanson en hommage des boobs (mature content)](http://vimeo.com/71538460)
