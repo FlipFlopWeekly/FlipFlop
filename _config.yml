@@ -1,10 +1,14 @@
 name: FlipFlop Weekly
 url: http://flipflop.trgdy.com
 
+description: Archives of the FlipFlop Weekly Newsletter — Five Flips and five Flops delivered to your inbox each week.
+author: FlipFlop Crew
+copyright: 2013-2014 FlipFlop Crew
+
 markdown: redcarpet
 pygments: true
 
-# See http://jekyllrb.com/docs/permalinks/.
+# See http://jekyllrb.com/docs/permalinks/
 permalink: /:month-:day-:year/:title.html
 
 
@@ -19,3 +23,8 @@ sitemap:
     - "/index.html"
   change_frequency_name: "change_frequency"
   priority_name: "priority"
+
+# See https://github.com/agelber/jekyll-rss
+rss_path: /
+rss_name: atom.xml
+rss_post_limit: 10
