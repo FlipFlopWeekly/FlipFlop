@@ -9,7 +9,7 @@ markdown: redcarpet
 pygments: true
 
 # See http://jekyllrb.com/docs/permalinks/
-permalink: /:month-:day-:year/:title.html
+permalink: /:title.html
 
 
 # See https://github.com/kinnetica/jekyll-plugins
