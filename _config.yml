@@ -6,3 +6,16 @@ pygments: true
 
 # See http://jekyllrb.com/docs/permalinks/.
 permalink: /:month-:day-:year/:title.html
+
+
+# See https://github.com/kinnetica/jekyll-plugins
+sitemap:
+  file: "/sitemap.xml"
+  exclude:
+    - "/atom.xml"
+    - "/feed.xml"
+    - "/feed/index.xml"
+  include_posts:
+    - "/index.html"
+  change_frequency_name: "change_frequency"
+  priority_name: "priority"
