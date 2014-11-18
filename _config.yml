@@ -6,7 +6,7 @@ author: FlipFlop Crew
 copyright: 2013-2014 FlipFlop Crew
 
 markdown: redcarpet
-pygments: true
+highlighter: 'pygments'
 
 # See http://jekyllrb.com/docs/permalinks/
 permalink: /:title.html
